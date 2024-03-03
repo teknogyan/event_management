@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap");
+
+:root {
+  --main-color: #df6d38;
+  --secondary-color: #f5f0f0;
+  --tertiary-color: #c7b7b7a1;
+  --text-color-primary: #140f0f;
+  --text-color-secondary: #fff;
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  color: var(--text-color-primary);
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+body {
+  background: var(--secondary-color);
+}
+
+section {
+  padding: 2rem 10%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Header */
+
+header {
+  background: #333;
+  padding: 1rem;
+}
+
+.logo {
+  top: 0;
+  left: 0;
+  padding: 20px 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+header span {
+  color: #fff;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1.6rem 2rem 0;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin-left: 1rem;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+}
+
+/* Top Content */
+.top-content {
+  text-align: center;
+}
+
+.top-content p {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.top-content p span {
+  color: var(--main-color);
+}
+
+.top-content div {
+  margin-top: 20px;
+}
+
+/* Services */
+
+.services-wrapper {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.services-wrapper .service {
+  background: var(--tertiary-color);
+  padding: 1rem;
+  min-height: 300px;
+  border-radius: 25px 0 25px 0;
+}
+
+.services-wrapper .service i {
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 1.6rem;
+  background: var(--main-color);
+  border-radius: 50%;
+}
+
+.services-wrapper h4 {
+  font-size: 1.4rem;
+}
+
+/* About Us */
+
+.about-us-content {
+  flex-direction: row;
+  margin-top: 40px;
+  display: flex;
+  gap: 40px;
+  text-align: center;
+  align-items: center;
+}
+
+.about-us-image {
+  max-width: 50%;
+  height: auto;
+  border: #333 solid 5px;
+}
+
+.about-us-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-us-text h3 {
+  margin: 0 0 1rem;
+}
+
+.about-us-content .btn {
+  display: inline-block;
+  margin: 20px 10px 0;
+}
+
+/* Clients */
+
+.clients-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.client-details {
+  display: flex;
+}
+
+.client {
+  background-color: var(--tertiary-color);
+  padding: 1.4rem;
+  position: relative;
+  border-radius: 10px;
+}
+
+.client p {
+  margin-top: 40px;
+}
+
+.client-image {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.client-info {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.client-info h4,
+.client-info p {
+  margin: 0.2rem;
+}
+
+.client i {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  font-size: 60px;
+  color: var(--main-color);
+}
+
+/* Gallery */
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.images img {
+  width: 100%;
+  height: auto;
+  border: #333 solid 2px;
+  box-shadow: #333 4px 2px 1px;
+}
+
+/* Contact form */
+
+.contact-us form {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 800px;
+}
+
+.contact-us form .input-boxes {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-us form textarea {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+input,
+textarea {
+  background-color: var(--tertiary-color);
+  padding: 10px 8px;
+  color: var(--main-color);
+}
+
+.contact-us form .btn {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/* Utilities */
+section h2 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2.1rem;
+}
+
+section span {
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.swiper {
+  width: 70vw;
+  height: 90vh;
+  border-radius: 2%;
+}
+
+.btn {
+  background: #777;
+  padding: 7px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--main-color);
+}
+
+@media (max-width: 768px) {
+  .services-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .images {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .clients-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .about-us-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
