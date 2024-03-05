@@ -41,6 +41,11 @@ h4 {
 header {
   background: #333;
   padding: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
 }
 
 .logo {
@@ -78,6 +83,11 @@ header span {
 
 .navbar a:hover {
   color: var(--main-color);
+}
+
+.navbar .mobile-menu {
+  flex-direction: column;
+  display: none;
 }
 
 /* Top Content */
@@ -258,6 +268,11 @@ textarea {
 }
 
 /* Utilities */
+.menu-button #close-button,#hamburger-button{
+  display: none;
+  min-width: 24px;
+  fill: var(--text-color-secondary);
+}
 section h2 {
   text-transform: uppercase;
   font-weight: 800;
@@ -288,6 +303,21 @@ section span {
 }
 
 @media (max-width: 768px) {
+  .navbar .mobile-menu {
+    flex-direction: column;
+  }
+
+  .navbar .pc-menu {
+    display: none;
+  }
+
+  .menu-button #hamburger-button {
+    display: block;
+  }
+  .menu-button #close-button {
+    display: none;
+  }
+
   .services-wrapper {
     grid-template-columns: 1fr;
   }
@@ -306,5 +336,8 @@ section span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .contact-us form .input-boxes {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

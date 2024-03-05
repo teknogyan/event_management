@@ -27,3 +27,8 @@ const swiper = new Swiper('.swiper', {
          prevEl: '.swiper-button-prev',
      },
 });
+
+const menu_button = document.getElementById("hamburger-button");
+const close_button = document.getElementById("close-button");
+
+menu_button.addEventListener()
