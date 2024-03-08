@@ -33,17 +33,16 @@ const close_button = document.getElementById("close-button");
 const menu = document.getElementById("mobile-menu");
 const logo = document.getElementById("logo");
 
-menu_button.addEventListener('click', () =>{
-logo.style.display = "none"
-menu.style.display= "flex"
-menu_button.style.display = "none";
-close_button.style.display = "block"
+menu_button.addEventListener("click", () => {
+  logo.style.display = "none";
+  menu.style.display = "flex";
+  menu_button.style.display = "none";
+  close_button.style.display = "block";
 });
 
-close_button.addEventListener('click', () => {
-  logo.style.display = "block"
-menu.style.display= "none"
-menu_button.style.display = "block";
-close_button.style.display = "none"
-})
-
+close_button.addEventListener("click", () => {
+  logo.style.display = "block";
+  menu.style.display = "none";
+  menu_button.style.display = "block";
+  close_button.style.display = "none";
+});
