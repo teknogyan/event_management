@@ -40,12 +40,14 @@ h4 {
 
 header {
   background: #333;
-  padding: 1rem;
-  position: relative;
+  margin-bottom: 10px;
+  width: 100vw;
+  height: auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 1.5rem;
+  justify-content: space-between;
+  padding: 0 1.8rem;
+  transition: all 0.1s ease;
 }
 
 .logo {
@@ -62,19 +64,15 @@ header span {
 }
 
 .navbar {
-  position: absolute;
-  top: 0;
-  right: 0;
   padding: 1.6rem 2rem 0;
 }
 
 .navbar ul {
-  display: flex;
   list-style: none;
 }
 
-.navbar ul li {
-  margin-left: 1rem;
+li {
+  margin: 0.8rem;
 }
 
 .navbar a {
@@ -85,9 +83,16 @@ header span {
   color: var(--main-color);
 }
 
+.navbar .pc-menu {
+  display: flex;
+}
+
 .navbar .mobile-menu {
   flex-direction: column;
+  align-items: center;
   display: none;
+  height: 100vh;
+  font-size: 1.4rem;
 }
 
 /* Top Content */
@@ -268,7 +273,8 @@ textarea {
 }
 
 /* Utilities */
-.menu-button #close-button,#hamburger-button{
+.menu-button #close-button,
+#hamburger-button {
   display: none;
   min-width: 24px;
   fill: var(--text-color-secondary);
@@ -285,8 +291,8 @@ section span {
 }
 
 .swiper {
-  width: 70vw;
-  height: 90vh;
+  width: 85vw;
+  height: 70vh;
   border-radius: 2%;
 }
 
@@ -303,8 +309,15 @@ section span {
 }
 
 @media (max-width: 768px) {
+  .logo {
+    /* display: none; */
+  }
   .navbar .mobile-menu {
+    /* display: flex; */
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
   }
 
   .navbar .pc-menu {
